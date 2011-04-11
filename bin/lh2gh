@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+$:.unshift File.expand_path(File.dirname(__FILE__) + "/../lib")
+require 'lh2gh/cli'
+require 'logger'
+
+LOGGER = Logger.new STDOUT
+LOGGER.level = Logger::INFO
+
+Lh2gh::CLI.start
+
+LOGGER.close
