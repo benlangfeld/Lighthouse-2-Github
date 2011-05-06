@@ -10,6 +10,7 @@ You need to build this gem yourself. Here's how:
 $ git clone https://github.com/benlangfeld/Lighthouse-2-Github.git
 $ cd Lighthouse-2-Github
 $ rake build && gem install pkg/gem build pkg/lh2gh-0.0.1.gem 
+```
 
 ## Usage
 
@@ -19,6 +20,12 @@ $ lh2gh migrate --gh-repository=your_repo/your_project --lh-account=your_lh_acco
 ```
 
 This will pull all tickets from the first project in your LH account. Ensure your API token has access to the project.
+
+```
+$ lh2gh migrate --gh-repository=your_repo/your_project --lh-account=your_lh_account --lh-token=56Ads...123 --project-id=123 --page=2
+```
+
+Pulls all tickets from a specific project, starting on page 2 of the results. 
 
 ## Features
 
